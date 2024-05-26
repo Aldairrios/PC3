@@ -1,0 +1,15 @@
+@model UserManagementApp.Models.User
+
+@{
+    ViewData["Title"] = "User Details";
+}
+
+<h1>User Details</h1>
+
+<div>
+    <img src="@Model.Avatar" alt="Avatar" />
+    <p>ID: @Model.Id</p>
+    <p>Email: @Model.Email</p>
+    <p>First Name: @Model.FirstName</p>
+    <p>Last Name: @Model.LastName</p>
+</div>
