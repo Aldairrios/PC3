@@ -1,15 +1,19 @@
 @model UserManagementApp.Models.User
 
 @{
-    ViewData["Title"] = "User Details";
+    ViewData["Title"] = "Detalles de Usuario";
 }
 
-<h1>User Details</h1>
+<h1 class="text-center">DETALLES DE USUARIO</h1>
 
-<div>
-    <img src="@Model.Avatar" alt="Avatar" />
-    <p>ID: @Model.Id</p>
-    <p>Email: @Model.Email</p>
-    <p>First Name: @Model.FirstName</p>
-    <p>Last Name: @Model.LastName</p>
+<div class="d-flex justify-content-center">
+    <div class="card col-md-6">
+        <div class="card-body text-center">
+            <img src="@Model.Avatar" alt="Avatar" class="img-fluid rounded-circle mb-3" style="max-width: 150px;" />
+            <p><strong>ID:</strong> @Model.Id</p>
+            <p><strong>Email:</strong> @Model.Email</p>
+            <p><strong>Nombre:</strong> @Model.FirstName</p>
+            <p><strong>Apellido:</strong> @Model.LastName</p>
+        </div>
+    </div>
 </div>
